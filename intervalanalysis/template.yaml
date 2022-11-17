@@ -24,6 +24,7 @@ spec:
             marginal: 60
           services:
           - logTemplateName: freshelk
+            logTemplateVersion: "v2.0"
             logScopeVariables: "kubernetes.pod_name"
             baselineLogScope: ".*{{args.baseline-hash}}.*"
             canaryLogScope: ".*{{args.canary-hash}}.*"
