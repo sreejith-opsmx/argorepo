@@ -17,7 +17,7 @@ spec:
           application: intervalapp1
           lifetimeMinutes: 180
           user: admin
-          intervalTime: 6
+          intervalTime: 30
           lookBackType: sliding
           threshold:
             pass: 80
