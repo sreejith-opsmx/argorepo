@@ -29,7 +29,7 @@ spec:
             canaryLogScope: ".*{{args.canary-hash}}.*"
             metricTemplateName: prommetric
             metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-            baselineMetricScope: "argocd-gitpr,{{args.baseline-hash}},issuegenqass"
-            canaryMetricScope: "argocd-gitpr,{{args.canary-hash}},issuegenqass"
+            baselineMetricScope: "intervalapp1,{{args.baseline-hash}},issuegenqass"
+            canaryMetricScope: "intervalapp1,{{args.canary-hash}},issuegenqass"
             
             
