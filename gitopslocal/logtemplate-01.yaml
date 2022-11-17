@@ -8,10 +8,10 @@ data:
  Json: |
   {
   "templateName": "logtemplate-02",
-  "monitoringProvider": "ELASTICSEARCH",
+  "monitoringProvider": "",
   "scoringAlgorithm": "Canary",
   "accountName": "ElasticserchTest1",
-  "index": "test-log-",
+  "index": "",
   "namespace": null,
   "regExFilter": false,
   "regExResponseKey": "",
