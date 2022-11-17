@@ -14,7 +14,7 @@ spec:
         opsmx:
           profile: opsmx-profile
           gateUrl: https://isd-argocd.isd-dev.opsmx.net/
-          application: intervalapp1
+          application: intervalapp2
           lifetimeMinutes: 180
           user: admin
           intervalTime: 30
