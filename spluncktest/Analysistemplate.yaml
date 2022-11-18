@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AnalysisTemplate
 metadata:
-  name: testapp1235
+  name: testapp7788
 spec:
   metrics:
-    - name: testapp1235
+    - name: testapp7788
       provider:
         opsmx:
           profile: "opsmx-profile"
-          gateUrl: https://oes-argoqa.isd-dev.opsmx.net/
+          gateUrl: https://isd-argocd.isd-dev.opsmx.net/
           user: user2
-          application: testrclassification1
+          application: splunktestreview1
           baselineStartTime: "2022-03-08T10:46:00Z"
           canaryStartTime: "2022-03-08T10:46:00Z"
           lifetimeMinutes: 6
