@@ -15,13 +15,13 @@ data:
       {
         "metrics": [
           {
-            "metricType": "ADVANCED",
+            "metricType": "",
             "metricWeight": 1,
             "nanStrategy": "Remove",
-            "accountName": "promint1",
+            "accountName": "",
             "riskDirection": "HigherOrLower",
             "customThresholdHigher": "10",
-            "name": "container_memory_usage_bytes{container='job_name'}",
+            "name": "",
             "criticality": "Normal",
             "customThresholdLower": "10",
             "watchlist": false
@@ -150,8 +150,8 @@ data:
       }
     ]
   },
-  "templateName": "metrictemplatemissingfields",
+  "templateName": "",
   "isEdit": false,
-  "advancedProvider": "PROMETHEUS",
+  "advancedProvider": "",
   "versionNo": "v1.0"
   }
