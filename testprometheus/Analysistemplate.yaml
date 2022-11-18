@@ -10,7 +10,7 @@ spec:
           profile: "opsmx-profile"
           gateUrl: https://isd-argocd.isd-dev.opsmx.net/
           user: user2
-          application: testerro1
+          application: testerror1
           baselineStartTime: "2022-10-26T13:00:00Z"
           canaryStartTime: "2022-10-26T13:00:00Z"
           lifetimeMinutes: 30
