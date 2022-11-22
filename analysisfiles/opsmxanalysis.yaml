@@ -4,7 +4,7 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: jobtest
+    application: testanalysis3
     user: admin
     gateUrl: 'https://isd-argocd.isd-dev.opsmx.net/'
     lifetimeMinutes: 3
@@ -14,8 +14,8 @@ data:
     passScore: 90
     serviceList:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-      baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},jobtest"
-      canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},jobtest"
+      baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},testanalysis3"
+      canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},testanalysis3"
       metricTemplateName: "metrixtemplates"
     - logTemplateName: testlog1123
       logScopeVariables: "kubernetes.pod_name"
