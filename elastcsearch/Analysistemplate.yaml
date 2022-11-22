@@ -14,8 +14,8 @@ spec:
           profile: opsmx-profile
           gateUrl: https://isd-argocd.isd-dev.opsmx.net/
           application: elasticqa1
-          baselineStartTime: "2021-12-03T11:29:46.915Z"
-          canaryStartTime: "2021-11-03T11:29:46.915Z"
+          baselineStartTime: "2021-11-03T11:29:46.915Z"
+          canaryStartTime: "2021-11-03T11:29:46.916Z"
           user: user2
           lifetimeMinutes: 3
           gitops: false
