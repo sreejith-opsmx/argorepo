@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opsmx-provider-config
+data:
+  providerConfig: |
+    application: jobtest
+    user: admin
+    gateUrl: 'https://isd-argocd.isd-dev.opsmx.net/'
+    lifetimeMinutes: 3
+    intervalTime: 3
+    lookBackType: sliding
+    gitops: true
+    passScore: 90
+    serviceList:
+    - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
+      baselineMetricScope: "argocd-gitpr,{{env.STABLE_POD_HASH}},jobtest"
+      canaryMetricScope: "argocd-gitpr,{{env.LATEST_POD_HASH}},jobtest"
+      metricTemplateName: "metrixtemplates"
+    - logTemplateName: testlog1123
+      logScopeVariables: "kubernetes.pod_name"
+      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
+      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
+      logTemplateVersion: "v1.0"
