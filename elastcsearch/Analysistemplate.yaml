@@ -16,12 +16,12 @@ spec:
           application: elastic-gitops
           user: admin
           lifetimeMinutes: 3
-          gitops: true
+          gitops: false
           threshold:
             pass: 60
             marginal: 40   
           services:
-          - logTemplateName: elasticlogtemp-gitops
+          - logTemplateName: elasticlogtemp1
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
