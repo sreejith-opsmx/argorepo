@@ -10,8 +10,8 @@ spec:
       provider:
         opsmx:
           profile: "opsmx-profile"
-          gateUrl: https://isd411.aoa.oes.opsmx.org/
-          application: rajuelkapp
+          gateUrl: https://obs411.aoa.oes.opsmx.org/
+          application: rajuelkapp1
           baselineStartTime: "2021-11-03T11:29:46.915Z"
           canaryStartTime: "2021-11-03T11:29:46.915Z" 
           user: admin
