@@ -4,8 +4,7 @@ metadata:
   name: tmpl-gitops
 spec:
   args:
-    - name: canary-hash
-    - name: baseline-hash
+    - name: experiment-hash
   metrics:
     - name: canary-score
       count: 1
