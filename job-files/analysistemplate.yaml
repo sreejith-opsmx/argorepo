@@ -48,5 +48,5 @@ spec:
                     name: metrixtemplates
                 - name: secret-config-volume
                   secret:
-                    secretName: opsmx-profile-v5
+                    secretName: opsmx-profile
                     optional: false
