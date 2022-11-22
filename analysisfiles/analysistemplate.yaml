@@ -7,14 +7,14 @@ spec:
     - name: canary-hash
     - name: baseline-hash
   metrics:
-    - name: junaid-job-analysis
+    - name: job-analysis
       provider:
         job:
           spec:
             backoffLimit: 2
             template:
               spec:
-                serviceAccountName: job-acc
+                serviceAccountName: job-acc1
                 imagePullSecrets:
                 - name: opsmx11-secret
                 containers:
@@ -42,10 +42,10 @@ spec:
                 volumes:
                 - name: provider-config-volume
                   configMap:
-                    name: opsmx-provider-config
+                    name: opsmx-provider-config1
                 - name: metric-config-volume
                   configMap:
-                    name: metrixtemplates
+                    name: metrixtemplates1
                 - name: secret-config-volume
                   secret:
                     secretName: opsmx-profile
