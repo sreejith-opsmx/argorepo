@@ -4,9 +4,9 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: final-job
+    application: jobtest
     user: admin
-    gateUrl: 'https://isd-dev.argo-dev.opsmx.net/'
+    gateUrl: 'https://isd-argocd.isd-dev.opsmx.net/'
     lifetimeMinutes: 3
     intervalTime: 3
     lookBackType: sliding
