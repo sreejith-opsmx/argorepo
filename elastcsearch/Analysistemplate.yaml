@@ -15,7 +15,7 @@ spec:
           gateUrl: https://isd-argocd.isd-dev.opsmx.net/
           application: elasticqa1
           baselineStartTime: "2021-11-03T11:29:46.915Z"
-          canaryStartTime: "2021-11-03T11:29:46.916Z"
+          canaryStartTime: "2021-11-03T11:20:47.916Z"
           user: user2
           lifetimeMinutes: 3
           gitops: false
@@ -25,5 +25,5 @@ spec:
           services:
           - logTemplateName: elasticlogtemp1
             logScopeVariables: "kubernetes.container_name"
-            baselineLogScope: "baseapp-rest-1"
+            baselineLogScope: "baseapp-ret-1"
             canaryLogScope: "canaryapp-rest-1"
