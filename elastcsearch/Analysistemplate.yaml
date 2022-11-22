@@ -13,8 +13,8 @@ spec:
       provider:
         opsmx:
           profile: opsmx-profile-new
-          application: elastic-gitops
-          user: admin
+          application: elasticqa1
+          user: user2
           lifetimeMinutes: 3
           gitops: false
           threshold:
