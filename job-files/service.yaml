@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: junaid-on-job
+  name: opsmx-issuegen-service
 spec:
   selector:
-    app: junaid-on-job
+    app: opsmx-issuegen-service
   ports:
   - protocol: TCP
     port: 80
