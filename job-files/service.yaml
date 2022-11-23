@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: sd-ss1-app-svc
+  name: junaid-on-job
 spec:
   selector:
-    app: sd-ss1-app
+    app: junaid-on-job
   ports:
   - protocol: TCP
     port: 80
