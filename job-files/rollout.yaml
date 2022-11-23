@@ -35,7 +35,7 @@ spec:
         - pause: { duration: 15s }
         - analysis:
             templates:
-              - templateName: junaid-job-analysis
+              - templateName: opsmx-analysis-template
             args:
               - name: canary-hash
                 valueFrom:
@@ -47,7 +47,7 @@ spec:
         - pause: { duration: 15s }
         - analysis:
             templates:
-              - templateName: junaid-job-analysis
+              - templateName: opsmx-analysis-template
             args:
               - name: canary-hash
                 valueFrom:
@@ -59,7 +59,7 @@ spec:
         - pause: { duration: 15s }
         - analysis:
             templates:
-              - templateName: junaid-job-analysis
+              - templateName: opsmx-analysis-template
             args:
               - name: canary-hash
                 valueFrom:
@@ -71,7 +71,7 @@ spec:
         - pause: { duration: 15s }
         - analysis:
             templates:
-              - templateName: junaid-job-analysis
+              - templateName: opsmx-analysis-template
             args:
               - name: canary-hash
                 valueFrom:
