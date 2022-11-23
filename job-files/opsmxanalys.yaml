@@ -18,8 +18,8 @@ data:
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},jobtest"
       metricTemplateName: "Prom"
       metricTemplateVersion: "v1.0"
-    - logTemplateName: Elk
+    - logTemplateName: stackdriver
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v5.0"
+      logTemplateVersion: "v2.0"
