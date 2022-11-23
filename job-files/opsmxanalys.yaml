@@ -16,8 +16,8 @@ data:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},jobtest"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},jobtest"
-      metricTemplateName: "metrixtemplates"
-    - logTemplateName: testlog1123
+      metricTemplateName: "newrelic"
+    - logTemplateName: stackdriver
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
