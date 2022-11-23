@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: issugensdlive12.isd-dev.opsmx.net
+  - host: issugens-raju1234.isd-dev.opsmx.net
     http:
       paths:
       - path: /
