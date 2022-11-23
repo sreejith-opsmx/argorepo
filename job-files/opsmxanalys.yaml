@@ -17,7 +17,7 @@ data:
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},jobtest"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},jobtest"
       metricTemplateName: "newrelic"
-    - logTemplateName: stackdriver
+    - logTemplateName: Elk
       logScopeVariables: "kubernetes.pod_name"
       baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
       canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
