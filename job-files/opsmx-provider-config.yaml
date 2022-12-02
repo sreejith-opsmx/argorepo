@@ -17,4 +17,3 @@ data:
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},junaid-on-job"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},junaid-on-job"
       metricTemplateName: "opsmx-metric-template"
-      metricTemplateVersion: "v2.0"
