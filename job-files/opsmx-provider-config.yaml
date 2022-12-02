@@ -16,10 +16,5 @@ data:
     - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
       baselineMetricScope: "isd-argofull,{{env.STABLE_POD_HASH}},junaid-on-job"
       canaryMetricScope: "isd-argofull,{{env.LATEST_POD_HASH}},junaid-on-job"
-      metricTemplateName: "newrelic"
+      metricTemplateName: "opsmx-metric-template"
       metricTemplateVersion: "v2.0"
-    - logTemplateName: stackdriver
-      logScopeVariables: "kubernetes.pod_name"
-      baselineLogScope: ".*{{env.STABLE_POD_HASH}}.*"
-      canaryLogScope: ".*{{env.LATEST_POD_HASH}}.*"
-      logTemplateVersion: "v2.0"
