@@ -41,7 +41,7 @@ spec:
                 - name: provider-config-volume
                   configMap:
                     name: opsmx-provider-config
-                - name: metric-template-volume
+                - name: metric-config-volume
                   configMap:
                     name: opsmx-metric-template
                 - name: secret-config-volume
