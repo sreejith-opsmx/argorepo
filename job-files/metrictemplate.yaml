@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: opsmx-metric-template
 data:
-  metrixtemplates: |
+  opsmx-metric-template: |
     {
     "filterKey": "${namespace_key},${pod_key},${app_name}",
     "data": {
