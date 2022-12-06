@@ -15,6 +15,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: junaid-on-job
+            name: opsmx-issuegen-service
             port:
               number: 8088
