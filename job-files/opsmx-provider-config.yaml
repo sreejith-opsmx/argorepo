@@ -4,7 +4,7 @@ metadata:
   name: opsmx-provider-config
 data:
   providerConfig: |
-    application: jobtest
+    application: sreejihttestapp
     user: admin
     gateUrl: 'https://isd-argocd.isd-dev.opsmx.net/'
     lifetimeMinutes: 3
