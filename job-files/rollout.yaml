@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: junaid-on-job
+  name: opsmx-example-rollout
 spec:
   replicas: 4
   selector:
