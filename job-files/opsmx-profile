@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: opsmx-profile
+type: Opaque
+data:
+  cd-integration: dHJ1ZQ==
+  source-name: YXJnb2NkLWlzZA==
+  gate-url: aHR0cHM6Ly9pc2QtYXJnb2NkLmlzZC1kZXYub3BzbXgubmV0Lw==
+  user: YWRtaW4=
