@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: sreejithissuegen.aoa.oes.opsmx.org
+  - host: sreejithissuegen.qa.opsmx.net
     http:
       paths:
       - path: /
