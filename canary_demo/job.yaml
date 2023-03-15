@@ -8,8 +8,8 @@ spec:
   template:
     spec:
       containers:
-      - command: ["exit", "1"]
-          image: quay.io/opsmxpublic/spin-sample-pipeline:1.0
-          name: gitcheck
+        - command: ["exit", "1"]
+            image: quay.io/opsmxpublic/spin-sample-pipeline:1.0
+            name: gitcheck
       restartPolicy: Never
   backoffLimit: 4
