@@ -9,7 +9,7 @@ spec:
   metrics:
     - name: canary-score
       provider:
-        opsmx:
+        job:
           gateUrl: https://isd.oea.opsmx.net/
           application: canary-app
           user: admin
