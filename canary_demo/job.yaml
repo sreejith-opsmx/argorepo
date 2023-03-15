@@ -1,15 +1,15 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: schema-migrate-
+  generateName: check-rule-
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
   template:
     spec:
       containers:
-      - name: pi
-        image: perl:5.34.0
-        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)","exit 1"]
+      - command: ["exit", "1"]
+          image: quay.io/opsmxpublic/spin-sample-pipeline:1.0
+          name: gitcheck
       restartPolicy: Never
   backoffLimit: 4
