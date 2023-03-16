@@ -4,8 +4,8 @@ metadata:
   generateName: check-rule-
   annotations:
     argocd.argoproj.io/hook: PreSync
-template:
-  spec:
+spec:
+  template:
     containers:
     - name: command-demo-container
       image: debian
