@@ -1,15 +1,12 @@
-apiVersion: batch/v1
-kind: Job
+apiVersion: v1
+kind: Pod
 metadata:
   generateName: check-rule-
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
-  template:
-    spec:
-      containers:
-          image: debian
-          command: ["printenv"]
-          name: gitcheck
-      restartPolicy: Never
-  backoffLimit: 4
+  containers:
+  - name: command-demo-container
+    image: debian
+    command: ["printenv"]
+  restartPolicy: Never
