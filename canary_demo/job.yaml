@@ -1,12 +1,14 @@
 apiVersion: v1
-kind: Pod
+kind: Job
 metadata:
   generateName: check-rule-
   annotations:
     argocd.argoproj.io/hook: PreSync
-spec:
-  containers:
-  - name: command-demo-container
-    image: debian
-    command: ["printenv"]
-  restartPolicy: Never
+template:
+  spec:
+    containers:
+    - name: command-demo-container
+      image: debian
+      command: ["printenv"]
+    restartPolicy: Never
+  backoffLimit: 2
