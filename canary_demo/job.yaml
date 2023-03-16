@@ -8,9 +8,8 @@ spec:
   template:
     spec:
       containers:
-          command:
-            - '/bin/bash exit 1'
-          image: quay.io/opsmxpublic/spin-sample-pipeline:1.0
+          image: debian
+          command: ["printenv"]
           name: gitcheck
       restartPolicy: Never
   backoffLimit: 4
