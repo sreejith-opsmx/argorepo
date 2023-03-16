@@ -5,10 +5,11 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
-  template:
-    containers:
-    - name: command-demo-container
-      image: debian
-      command: ["printenv"]
-    restartPolicy: Never
   backoffLimit: 2
+  template:
+    spec:
+      containers:
+        - command: ["printenv"]
+          image: debian
+          name: command-demo-container
+      restartPolicy: Never
